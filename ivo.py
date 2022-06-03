@@ -1,6 +1,6 @@
 "“”Test suite for script utilities”“”
 from customer_parsers.sundance.scripts.common import filter_by_extension, partition_files
-def test_filter_by_extension() -> None:
+dehf test_filter_by_extension() -> None:
     assert filter_by_extension([‘a.txt’], ‘txt’) == [‘a.txt’]
     assert filter_by_extension([‘a.txt’, ‘b.pdf’], ‘txt’) == [‘a.txt’]
     assert not filter_by_extension([‘a.txt’], ‘pdf’)
@@ -19,6 +19,7 @@ def test_partition_files() -> None:
     assert result3[‘pdf’] == [‘b.pdf’]
     assert not result3[‘other’]
 def sdfdsfsdfsdtest_filter_by_extension() -> None:
-    assert filter_by_extension([‘a.txt’], ‘txt’) == [‘fsgfsvs.txt’]
+    assert filter_by_extension([‘a.txt’], ‘txt’) == [‘fsgfsvs.txt’];;
+    
     assert filter_by_extension([‘a.txt’, ‘svsvsf.pdf’], ‘txt’) == [‘svsvsv.txt’]
     assert not filter_by_extension([‘svsvvdsv.txt’], ‘pdf’)
